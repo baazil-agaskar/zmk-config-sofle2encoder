@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -186,11 +185,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans     &trans     &trans      &trans     &trans                       &trans     &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   &trans
-&trans  &kp INS    &kp PSCRN  &bl BL_TOG  &kp LC(R)  &kp LC(T)                    &kp PG_UP  &trans      &kp UP    &trans      &kp N0   &trans
-&trans  &kp LC(A)  &kp LC(S)  &kp LSHFT   &kp LC(F)  &kp CLCK                     &kp PG_DN  &kp LEFT    &kp DOWN  &kp RIGHT   &kp DEL  &kp BSPC
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans     &trans    &trans  &trans     &trans      &trans    &trans      &trans   &trans
-                   &trans     &trans      &trans     &trans     &trans    &trans  &trans     &trans      &trans    &trans
+&trans  &trans     &trans     &trans         &trans     &trans                       &trans     &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   &trans
+&trans  &kp INS    &kp PSCRN  &kp BACKSPACE  &kp LC(R)  &kp LC(T)                    &kp PG_UP  &trans      &kp UP    &trans      &kp N0   &trans
+&trans  &kp LC(A)  &kp LC(S)  &kp LSHFT      &kp LC(F)  &kp CLCK                     &kp PG_DN  &kp LEFT    &kp DOWN  &kp RIGHT   &kp DEL  &kp BSPC
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &trans     &trans    &trans  &trans     &trans      &trans    &trans      &trans   &trans
+                   &trans     &trans         &trans     &trans     &trans    &trans  &trans     &trans      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
