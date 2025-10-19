@@ -37,8 +37,8 @@
     combos {
         compatible = "zmk,combos";
 
-        rctrl {
-            bindings = <&kp RCTRL>;
+        rshift {
+            bindings = <&kp RSHIFT>;
             key-positions = <32 31>;
         };
 
@@ -52,8 +52,8 @@
             key-positions = <25 41>;
         };
 
-        rshift {
-            bindings = <&kp RSHIFT>;
+        rcrtl {
+            bindings = <&kp RCTRL>;
             key-positions = <33 34>;
         };
 
