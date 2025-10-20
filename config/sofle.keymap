@@ -56,13 +56,13 @@
             key-positions = <33 34>;
         };
 
-        lshift {
-            bindings = <&kp LSHIFT>;
+        lctrl {
+            bindings = <&kp LCTRL>;
             key-positions = <25 26>;
         };
 
-        lctrl {
-            bindings = <&kp LCTRL>;
+        lshift {
+            bindings = <&kp LSHIFT>;
             key-positions = <28 27>;
         };
     };
