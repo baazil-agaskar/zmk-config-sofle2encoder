@@ -65,6 +65,11 @@
             bindings = <&kp LSHIFT>;
             key-positions = <28 27>;
         };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <54 55>;
+        };
     };
 
     behaviors {
