@@ -183,7 +183,7 @@
             display-name = "Nav";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |       |      |      |       |       |      |                | BACK | PREV | PLAY  | NEXT | FWD   |       |
+            // |       |      |      |       |       |      |                | BACK | PREV | PLAY  | NEXT | FORWARD |       |
             // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
             // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
             // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
