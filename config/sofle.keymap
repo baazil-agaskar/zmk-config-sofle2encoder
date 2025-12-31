@@ -17,7 +17,6 @@
 
 &right_encoder { steps = <60>; };
 
-
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
@@ -66,6 +65,11 @@
         lshift {
             bindings = <&kp LSHIFT>;
             key-positions = <28 27>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <54 55>;
         };
     };
 
