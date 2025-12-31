@@ -1,0 +1,63 @@
+[33m92193bb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m - enter and dash(minus)
+[33m460eeb4[m Increase left encoder steps from 12 to 30
+[33m7b99c6b[m - control at right keyboard
+[33m584d103[m - remap delete, astrix, pipe and add on the right
+[33mf6b1442[m - Index and Middle are now SHIFT for both
+[33m7e56962[m - Colemak DH proper
+[33m97c1d14[m - comemak dh eye() swap
+[33meb0f33a[m - K rev cokemak DH
+[33mf7b1c39[m - y revision colamak DH
+[33md43a20c[m -colemak DH
+[33m484a2c3[m -rshift and rctrl
+[33m6597136[m - home row mods but with dual kp
+[33ma9fbf16[m - shift and control home row mods
+[33m3d7b78e[m - Home row modifiers
+[33m0dc7b5f[m - cut,copy, paste and undo to NAV
+[33md18a933[m A better numpad layer and a better underscore.
+[33mf0972b0[m encoder trial and error for left and right scroll v2
+[33m30a7194[m encoder trial and error for left and right scroll
+[33m7f38b16[m encoder steps reduced
+[33m9d295f0[m Encoder Step Reduction
+[33m43cca5d[m Enter is backspace and rctrl is enter. Underscore is below -
+[33m70e13cc[m - shift and control fixes
+[33m82740a5[m Control swap both are now right ctrl
+[33m57f4281[m via nickcoutsos v2
+[33m4d29e38[m via nickcoutsos
+[33ma5facf6[m N1 N2 and N3
+[33mdf7bb48[m backslash integration
+[33m5e75e91[m space enter
+[33m32aba7b[m change encoder 1 detent 1 action
+[33ma711021[m Update sofle.keymap
+[33m08c29d0[m Add files via upload
+[33mb9aad19[m Delete sofle2enc.docx
+[33m070f35a[m Add files via upload
+[33m3f153c5[m Merge branch 'master' of github.com:KeyboardHoarders/zmk-config-sofle2
+[33m5fa8325[m adjust for encoder
+[33m13aadf7[m Increase BT power fix disrupts
+[33m5a0104a[m Merge branch 'master' of github.com:KeyboardHoarders/zmk-config-sofle2
+[33mc55d893[m fixed audio and re named layers
+[33m9cb2d17[m fixed volume
+[33m8e589ec[m Create README.md
+[33mf44bb4c[m added ZMK studio
+[33mb8630c2[m added sleep
+[33mb8a62b7[m fixed vol up
+[33m2f51265[m fixed right alt
+[33m37a6bf9[m added nice view both sides
+[33m36cdad5[m deleted rando
+[33md2ee75f[m changed to bt clr all
+[33m3cf4950[m Merge branch 'master' of https://github.com/slingthat/zmk-config-sofle2
+[33mbbfb06c[m added nice view for left half
+[33mf29ae52[m removed bluetooth clear from raise layer
+[33m834a5be[m init commit for etsy
+[33mbdc9d61[m fixed mute
+[33ma199f66[m fixed grave
+[33mfaf595d[m grave escape added
+[33m8ad3af9[m Updated sofle.keymap
+[33m9625333[m Updated sofle.keymap
+[33mf8977fb[m Updated sofle.keymap
+[33m027b447[m Updated sofle.keymap
+[33m20314c2[m added 4th layer encoder keybind
+[33m62ad4d7[m added setting reset
+[33me25d2e1[m Updated sofle.keymap
+[33me95f151[m init1
+[33md45822b[m Initial User Config.
