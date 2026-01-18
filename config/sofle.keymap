@@ -54,12 +54,12 @@
 
         rcrtl {
             bindings = <&kp RCTRL>;
-            key-positions = <33 34>;
+            key-positions = <19 20>;
         };
 
         lctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <25 26>;
+            key-positions = <16 15>;
         };
 
         lshift {
@@ -70,6 +70,16 @@
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <54 55>;
+        };
+
+        renter {
+            bindings = <&kp ENTER>;
+            key-positions = <45 46>;
+        };
+
+        lenter {
+            bindings = <&kp ENTER>;
+            key-positions = <40 39>;
         };
     };
 
@@ -137,8 +147,6 @@
 
         default_layer {
             display-name = "Base";
-
-
             bindings = <
 &gresc          &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                                        &kp N6     &kp N7      &kp N8     &kp N9     &kp N0         &kp PLUS
 &kp TAB         &kp Q   &kp W      &kp F     &kp P     &kp B                                         &kp J      &kp L       &kp U      &kp Y      &kp SEMICOLON  &kp MINUS
@@ -152,7 +160,6 @@
 
         lower_layer {
             display-name = "Symbols";
-
             bindings = <
 &kp TILDE  &kp F1           &kp F2     &kp F3         &kp F4      &kp F5                                  &kp F6                 &kp F7  &kp F8      &kp F9     &kp F10    &kp F11
 &trans     &kp EXCLAMATION  &kp AT     &kp HASH       &kp DOLLAR  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp N7  &kp N8      &kp N9     &kp MINUS  &kp F12
@@ -168,7 +175,6 @@
 
         raise_layer {
             display-name = "Nav";
-
             bindings = <
 &trans  &trans     &trans     &trans         &trans     &trans                       &trans     &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   &trans
 &trans  &kp INS    &kp PSCRN  &kp BACKSPACE  &kp LC(R)  &kp LC(B)                    &kp PG_UP  &trans      &kp UP    &trans      &kp N0   &trans
@@ -181,7 +187,6 @@
         };
 
         adjust_layer {
-
             display-name = "System";
             bindings = <
 &bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
