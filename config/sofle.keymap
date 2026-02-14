@@ -176,11 +176,11 @@
         raise_layer {
             display-name = "Nav";
             bindings = <
-&trans  &trans     &trans     &trans         &trans     &trans                       &trans     &kp C_PREV       &kp C_PP  &kp C_NEXT         &trans   &trans
-&trans  &kp INS    &kp PSCRN  &kp BACKSPACE  &kp LC(R)  &kp LC(B)                    &kp PG_UP  &kp C_VOLUME_UP  &kp UP    &kp C_VOLUME_DOWN  &kp N0   &trans
-&trans  &kp LC(A)  &kp LC(S)  &kp LC(S)      &kp LC(T)  &kp CLCK                     &kp PG_DN  &kp LEFT         &kp DOWN  &kp RIGHT          &kp DEL  &kp BSPC
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(V)  &trans    &trans  &trans     &trans           &trans    &trans             &trans   &trans
-                   &trans     &trans         &trans     &trans     &trans    &trans  &trans     &trans           &trans    &trans
+&trans  &trans              &trans     &trans     &trans     &trans                       &trans      &kp C_PREV       &kp C_PP      &kp C_NEXT         &trans          &trans
+&trans  &kp RC(LEFT_SHIFT)  &kp PSCRN  &kp INS    &kp LC(R)  &kp LC(B)                    &kp PG_UP   &kp C_VOLUME_UP  &kp UP        &kp C_VOLUME_DOWN  &kp RC(RSHIFT)  &kp BACKSPACE
+&trans  &kp LC(A)           &kp LC(S)  &kp LC(S)  &kp LC(T)  &kp CLCK                     &kp PG_DN   &kp LEFT         &kp DOWN      &kp RIGHT          &kp A           &kp DELETE
+&trans  &kp LC(Z)           &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans    &trans  &kp LC(F6)  &kp LA(LEFT)     &kp LEFT_ALT  &kp LA(RIGHT)      &trans          &trans
+                            &trans     &trans     &trans     &trans     &trans    &trans  &trans      &trans           &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
