@@ -1,0 +1,12 @@
+/ {
+    vbatt {
+        compatible = "zmk,battery";
+        status = "okay";
+        io-channels = <&adc 0>;
+        divider = <2>;
+    };
+};
+
+&adc {
+    status = "okay";
+};
