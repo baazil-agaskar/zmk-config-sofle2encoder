@@ -1,9 +1,14 @@
 / {
-    vbatt {
-        compatible = "zmk,battery";
-        status = "okay";
-        io-channels = <&adc 0>;
-        divider = <2>;
+    chosen {
+        zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        label = "VBATT";
+        io-channels = <&adc 2>; // ADC 2 corresponds to Pin P0.04 on Nice!Nano
+        output-ohms = <2000000>; // 2M Ohm
+        full-ohms = <(2000000 + 806000)>; // 2M + 806k Ohm
     };
 };
 
