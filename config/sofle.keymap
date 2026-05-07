@@ -156,11 +156,11 @@
         lower_layer {
             display-name = "Symbols";
             bindings = <
-&kp TILDE  &kp F1         &kp F2             &kp F3     &kp F4           &kp F5                                  &kp F6                 &kp F7  &kp F8      &kp F9  &kp F10      &kp F11
-&trans     &kp PAGE_UP    &kp C_VOLUME_DOWN  &kp UP     &kp C_VOLUME_UP  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp N7  &kp N8      &kp N9  &kp PERCENT  &kp F12
-&trans     &kp PAGE_DOWN  &kp LEFT           &kp DOWN   &kp RIGHT        &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp N4  &kp N5      &kp N6  &kp PIPE     &trans
-&trans     &kp PAGE_DOWN  &kp LA(LEFT)       &kp EQUAL  &kp LA(RIGHT)    &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &kp N1  &kp N2      &kp N3  &kp BSLH     &trans
-                          &kp HASH           &trans     &trans           &trans                &trans    &trans  &trans                 &kp N0  &kp PERIOD  &trans
+&kp TILDE  &kp F1         &kp F2          &kp F3     &kp F4           &kp F5                                  &kp F6                 &kp F7                &kp F8                 &kp F9  &kp F10         &kp F11
+&trans     &kp PAGE_UP    &kp UNDERSCORE  &kp UP     &kp C_VOLUME_UP  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp N9  &kp UNDERSCORE  &kp F12
+&trans     &kp PAGE_DOWN  &kp LEFT        &kp DOWN   &kp RIGHT        &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N6  &kp PIPE        &trans
+&trans     &kp PAGE_DOWN  &kp LA(LEFT)    &kp EQUAL  &kp LA(RIGHT)    &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp N3  &kp BSLH        &trans
+                          &trans          &trans     &trans           &trans                &trans    &trans  &trans                 &trans                &trans                 &trans
             >;
 
             sensor-bindings =
