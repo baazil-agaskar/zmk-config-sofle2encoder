@@ -1,5 +1,11 @@
 on: [push, pull_request, workflow_dispatch]
 
+# Add this section to force Node 24 for all actions
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    # Update this to @main to get the latest infrastructure fixes 
+    # (This won't change your keyboard's v0.3 firmware code)
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
