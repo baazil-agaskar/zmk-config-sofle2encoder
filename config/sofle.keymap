@@ -89,8 +89,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <170>;
-            require-prior-idle-ms = <180>;
+            quick-tap-ms = <145>;
+            require-prior-idle-ms = <160>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <6 8 7 9 10 11 22 23 34 35 49 48 59 58 57 56 55 43 44 30 18 19 20 21 33 32 31 45 46 47>;
             hold-trigger-on-release;
@@ -103,8 +103,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <170>;
-            require-prior-idle-ms = <180>;
+            quick-tap-ms = <145>;
+            require-prior-idle-ms = <160>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
             hold-trigger-on-release;
@@ -154,9 +154,9 @@
             tapping-term-ms = <200>;
         };
 
-        play_pause: play_pause {
+        play_pause_tap_dance: play_pause_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "PLAY_PAUSE";
+            label = "PLAY_PAUSE_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp C_PLAY_PAUSE>;
 
@@ -170,11 +170,11 @@
         default_layer {
             display-name = "Colemak-DH";
             bindings = <
-&gresc          &kp N1       &kp N2           &kp N3               &kp N4               &kp N5                                        &kp N6     &kp N7                    &play_pause           &kp N9            &kp N0          &kp AMPERSAND
-&kp TAB         &kp Q        &kp W            &kp F                &kp P                &kp B                                         &kp J      &kp L                     &kp U                 &kp Y             &kp SEMICOLON   &kp SQT
-&kp LEFT_SHIFT  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml_shift LSHIFT T  &kp G                                         &kp M      &hmr_shift RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr LGUI O     &kp UNDERSCORE
-&kp LCTRL       &kp Z        &kp X            &kp C                &kp D                &kp V      &kp C_MUTE       &kp C_PLAY_PAUSE  &kp K      &kp H                     &kp COMMA             &kp DOT           &div_tap_dance  &minus_tap_dance
-                             &kp ASTRK        &kp LALT             &kp LGUI             &mo LOWER  &kp BACKSPACE    &kp SPACE         &mo RAISE  &kp DELETE                &kp RALT              &kp ENTER
+&gresc          &kp N1       &kp N2           &kp N3               &kp N4               &kp N5                                        &kp N6     &kp N7                    &play_pause_tap_dance  &kp N9            &kp N0          &kp AMPERSAND
+&kp TAB         &kp Q        &kp W            &kp F                &kp P                &kp B                                         &kp J      &kp L                     &kp U                  &kp Y             &kp SEMICOLON   &kp SQT
+&kp LEFT_SHIFT  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml_shift LSHIFT T  &kp G                                         &kp M      &hmr_shift RIGHT_SHIFT N  &hmr RIGHT_CONTROL E   &hmr RIGHT_ALT I  &hmr LGUI O     &kp UNDERSCORE
+&kp LCTRL       &kp Z        &kp X            &kp C                &kp D                &kp V      &kp C_MUTE       &kp C_PLAY_PAUSE  &kp K      &kp H                     &kp COMMA              &kp DOT           &div_tap_dance  &minus_tap_dance
+                             &kp ASTRK        &kp LALT             &kp LGUI             &mo LOWER  &kp BACKSPACE    &kp SPACE         &mo RAISE  &kp DELETE                &kp RALT               &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
@@ -183,11 +183,11 @@
         lower_layer {
             display-name = "Navigation";
             bindings = <
-&trans  &kp F1        &kp F2         &kp F3           &kp F4       &kp F5                                  &kp F6                 &kp F7        &kp F8        &kp F9           &kp F10        &kp F11
-&trans  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LC(F6)       &kp LC(F10)  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp LA(LEFT)  &kp LC(TAB)   &kp LC(LS(TAB))  &kp LA(RIGHT)  &kp F12
-&trans  &kp HOME      &kp PAGE_UP    &kp PAGE_DOWN    &kp END      &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp LEFT      &kp DOWN      &kp UP_ARROW     &kp RIGHT      &trans
-&trans  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)       &kp LC(RIGHT)  &trans
-                      &trans         &trans           &trans       &trans                &trans    &trans  &trans                 &trans        &trans        &trans
+&trans  &kp F1             &kp F2            &kp F3             &kp F4            &kp F5                                  &kp F6                 &kp F7        &kp F8        &kp F9           &kp F10        &kp F11
+&trans  &mmv MOVE_X(-100)  &mmv MOVE_X(100)  &mmv MOVE_Y(-100)  &mmv MOVE_X(100)  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp LA(LEFT)  &kp LC(TAB)   &kp LC(LS(TAB))  &kp LA(RIGHT)  &kp F12
+&trans  &kp HOME           &kp PAGE_UP       &kp PAGE_DOWN      &kp END           &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp LEFT      &kp DOWN      &kp UP_ARROW     &kp RIGHT      &trans
+&trans  &kp LC(LEFT)       &kp LC(RIGHT)     &kp LC(LS(TAB))    &kp LC(TAB)       &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)       &kp LC(RIGHT)  &trans
+                           &trans            &trans             &trans            &trans                &trans    &trans  &trans                 &trans        &trans        &trans
             >;
 
             sensor-bindings =
@@ -198,11 +198,11 @@
         raise_layer {
             display-name = "Symbols";
             bindings = <
-&trans  &trans                &trans         &trans      &trans  &trans                                         &trans         &trans        &trans         &trans            &trans     &trans
-&trans  &kp LEFT_BRACKET      &kp N7         &kp N8      &kp N9  &kp RIGHT_BRACKET                              &kp PERCENT    &kp ASTERISK  &kp MINUS      &kp PLUS          &kp FSLH   &kp TILDE
-&trans  &kp LEFT_PARENTHESIS  &kp N4         &kp N5      &kp N6  &kp RIGHT_PARENTHESIS                          &kp EQUAL      &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT  &kp DOLLAR
-&trans  &kp LEFT_BRACE        &kp N1         &kp N2      &kp N3  &kp RIGHT_BRACE        &kp CAPSLOCK    &trans  &kp AMPERSAND  &kp HASH      &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE
-                              &kp BACKSPACE  &kp PERIOD  &kp N0  &trans                 &trans          &trans  &trans         &trans        &trans         &trans
+&trans                &trans         &trans         &trans      &trans  &trans                                         &trans         &trans        &trans         &trans            &trans     &trans
+&kp LEFT_BRACKET      &kp BACKSPACE  &kp N7         &kp N8      &kp N9  &kp RIGHT_BRACKET                              &kp PERCENT    &kp ASTERISK  &kp MINUS      &kp PLUS          &kp FSLH   &kp TILDE
+&kp LEFT_PARENTHESIS  &kp PERIOD     &kp N4         &kp N5      &kp N6  &kp RIGHT_PARENTHESIS                          &kp EQUAL      &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT  &kp DOLLAR
+&kp LEFT_BRACE        &kp N0         &kp N1         &kp N2      &kp N3  &kp RIGHT_BRACE        &kp CAPSLOCK    &trans  &kp AMPERSAND  &kp HASH      &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE
+                                     &kp BACKSPACE  &kp PERIOD  &kp N0  &trans                 &trans          &trans  &trans         &trans        &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -213,8 +213,8 @@
             bindings = <
 &bt BT_CLR_ALL     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4                      &none        &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &none       &none
 &ext_power EP_TOG  &none          &kp INSERT     &kp LG(UP)       &kp LC(F6)     &studio_unlock                    &none        &kp C_VOLUME_UP  &kp LG(UP)        &kp C_VOLUME_DOWN  &none       &none
-&sys_reset         &none          &kp LG(LEFT)   &kp LG(DOWN)     &kp LG(RIGHT)  &caps_word                        &kp CAPS     &kp LG(LEFT)     &kp LG(DOWN)      &kp LG(RIGHT)      &none       &trans
-&bootloader        &kp LA(LC(I))  &kp LC(LS(E))  &kp LC(LS(SQT))  &kp LC(SQT)    &mkp LCLK       &none     &none   &kp LS(F10)  &kp LC(N1)       &kp LC(N2)        &kp LC(N3)         &kp LC(N4)  &trans
+&sys_reset         &none          &kp LG(LEFT)   &kp LG(DOWN)     &kp LG(RIGHT)  &mkp LCLK                         &kp LS(F10)  &kp LG(LEFT)     &kp LG(DOWN)      &kp LG(RIGHT)      &none       &trans
+&bootloader        &kp LA(LC(I))  &kp LC(LS(E))  &kp LC(LS(SQT))  &kp LC(SQT)    &caps_word      &none     &none   &kp CAPS     &kp LC(N1)       &kp LC(N2)        &kp LC(N3)         &kp LC(N4)  &trans
                                   &trans         &trans           &trans         &none           &trans    &trans  &none        &trans           &trans            &trans
             >;
 
