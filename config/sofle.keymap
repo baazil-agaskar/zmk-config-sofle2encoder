@@ -45,7 +45,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <40 19>;
+            key-positions = <40 45>;
         };
 
         rcrtl {
@@ -162,6 +162,15 @@
 
             tapping-term-ms = <200>;
         };
+
+        underscore_equal_tap_dance: underscore_equal_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UNDERSCORE_EQUAL_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&kp EQUAL>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -172,7 +181,7 @@
             bindings = <
 &gresc          &kp N1       &kp N2           &kp N3               &kp N4               &kp N5                                        &kp N6     &kp N7                    &play_pause_tap_dance  &kp N9            &kp N0          &kp AMPERSAND
 &kp TAB         &kp Q        &kp W            &kp F                &kp P                &kp B                                         &kp J      &kp L                     &kp U                  &kp Y             &kp SEMICOLON   &kp SQT
-&kp LEFT_SHIFT  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml_shift LSHIFT T  &kp G                                         &kp M      &hmr_shift RIGHT_SHIFT N  &hmr RIGHT_CONTROL E   &hmr RIGHT_ALT I  &hmr LGUI O     &kp UNDERSCORE
+&kp LEFT_SHIFT  &hml LGUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml_shift LSHIFT T  &kp G                                         &kp M      &hmr_shift RIGHT_SHIFT N  &hmr RIGHT_CONTROL E   &hmr RIGHT_ALT I  &hmr LGUI O     &underscore_equal_tap_dance
 &kp LCTRL       &kp Z        &kp X            &kp C                &kp D                &kp V      &kp C_MUTE       &kp C_PLAY_PAUSE  &kp K      &kp H                     &kp COMMA              &kp DOT           &div_tap_dance  &minus_tap_dance
                              &kp ASTRK        &kp LALT             &kp LGUI             &mo LOWER  &kp BACKSPACE    &kp SPACE         &mo RAISE  &kp DELETE                &kp RALT               &kp ENTER
             >;
