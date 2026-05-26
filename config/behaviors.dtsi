@@ -1,0 +1,18 @@
+/ {
+    behaviors {
+        mmv: mouse_move {
+            compatible = "zmk,behavior-mouse-move";
+            #binding-cells = <1>;
+        };
+    };
+};
+
+
+/ {
+    behaviors {
+        msc: mouse_scroll {
+            compatible = "zmk,behavior-mouse-scroll";
+            #binding-cells = <1>;
+        };
+    };
+};
